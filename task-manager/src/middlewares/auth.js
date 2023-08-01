@@ -10,7 +10,7 @@ const auth=async(req,res,next)=>{
         req.user=user;
         next()
     }catch(e){
-        res.status(401).send({error:"Validation required"})
+        res.status(401).send({error:"Validation required"});
     }
 }
 module.exports=auth;
